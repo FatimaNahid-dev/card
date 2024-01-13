@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <title>Business Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        .card {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .profile-image {
+            max-height: 50px;
+            border-radius: 50%;
+        }
+
+        .name {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .email {
+            color: #777;
+            margin: 5px 0;
+        }
+
+        .table {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        .table th, .table td {
+            padding: 5px 10px;
+            text-align: left;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-link {
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .social-link img {
+            max-width: 30px;
+            cursor: pointer;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="card">
+            <h2>Business Card</h2>
+            <img class="profile-image"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo0_MHgo8rKx8wELTFa-SmFC5MGLT8td-nAw&usqp=CAU"
+                alt="Profile Image">
+            <div class="name">Fatima Nahid</div>
+            <div class="email">codewithfatima@gmail.com</div>
+            <div class="table-container">
+            <table class="table">
+                <tr>
+                    <th scope="col">Skills:</th>
+                    <th scope="col">Interests:</th>
+                  </tr>
+                  <tr>
+                    <td>HTML</td>
+                    <td>Web Development</td>
+                  </tr>
+                  <tr>
+                    <td>CSS</td>
+                    <td>Photography</td>
+                  </tr>
+                  <tr>
+                    <td>Javascript</td>
+                    <td>Painting</td>
+                  </tr>
+            </table>
+        </div>
+            <div class="social-links"> 
+                <a class="social-link" href="https://www.linkedin.com" target="_blank">
+                    <img src="data:image/png;base64,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"
+                        alt="LinkedIn">
+                </a>
+                <a class="social-link" href="https://www.github.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/256/25/25231.png" alt="GitHub">
+                </a>
+                <a class="social-link" href="https://www.instagram.com" target="_blank">
+                    <img src="https://www.edigitalagency.com.au/wp-content/uploads/new-small-Instagram-logo-full-colour-png-184x184-pixels.png"
+                        alt="Instagram">
+                </a>
+                <a class="social-link" href="https://www.twitter.com" target="_blank">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAZlBMVEX///8AAADS0tL09PT8/Pzs7Oz39/dxcXG4uLiQkJA3NzdERETw8PDj4+NhYWEhISEmJianp6fd3d3AwMCYmJhqamp/f39TU1MUFBSxsbGenp7IyMiHh4d4eHgPDw8/Pz8uLi5LS0tKhQpiAAAEQklEQVRoga1Z63qqMBAURLxV0apVW6v4/i95vspOSMhsLnjmX9Nkgc3O7MXJrNBRTrLxKUfX1evPRcB6tu2NHLxUsnDSjc8zbdc7ObgxKxfd+iHP+Nr350/AMdMc23M5tLAXv7q1a9njKvu2GbaXcubbXe4csyIPLK7JtvE+w4squ+Uve20le2eJtuHcs/cf+aIfa8lEbJptBOGq9v/XvefF/s83dyHH9C67P/QHn+y1p+z/jNuu1sG9334UQRlW9ICDrWzVeHH27w/KcIvZRmjttQ0f5P7wQhEF2xck2lzIex6tparp1ppKPTXpg/AU2nTy70QIUPwGjiFmw1dTd5tae+1W+AxwMZMgbCIy9ENcJ0S9a0erVh6/UTYY/PqviY/WHHqOfpp5jcZ/TYTCgp6Ayqbom1ygI7RPOc+IDYlYJtg2Cma/iBCAyJ1hWTAILaz86zmICY9/pf5YDlEwh6hw7CAgoD0NUVkF4kZGVFfap0j1qenkD6KejKhHsi+vdJKv3dl6gtxrPRHlTmb1IZnW0RO5514/luxjUrD13wkpEtKOVB9QWQUS2ZSonYf1VB+HRLZDVBGRVw7Hd7RBndcgkc2IOu9T/YUpQhwoTu0QBlEPk3Cqj0Mi+2GviSAXyKxxldUgCd2WOxBVoKb6BLQ+/0rbdn4Q+pYcoh572zm1NcHSREcPlL7uZYzBA9HRAwG+y+o4GDYBokZzfRR7wnGJw/Zt45OnH3TTwo/RcZgRJ4CoI9rrARYkNoRe97eNw8WOE4SooeI0DfXddwIqvMwER3AIEDW9pNAgLnaKqvV/kYA/XHwnIIrS22sN0EI7cVzJ2jgcdaI+3zaOVG8TtSZrYwAldHMmnviegtXGNiXqW8JePXrjbiu9e1/BtoUNRtTxCoauXp7RkJlJO9Y2GqobvoDNTEbWAQiJbZ8kGFFHOQZefdgPIjMTtb0OYHZxzkpx6hBV2ovcyanf1VfyLHvmVRFnJQFdvfFo6T7sBTgrs5gmU0uZjziDlZu58gwg2zgN1QqBaUGcl6NgvKtnpMRaurTDvUO9xveQCi9xctqzo/UCeE0+6EwcqGPaqJ8KcbezJ8ib1iI9iWuBPXnugkSRBnT1fPB0Jrch5E2Qdkz7lOkz+lHHxaQuo0DVoJaCiFKbqBJd4clpH4QByonb2MwkXJyCEqGuHt25kyQk1YYa36koX7irh1rZlhCjgeIUrWAkZNGoE6Lq7owN8IFKygqHqNtQAOf8NlSSnaieuIKBfNFfESY9GcjMhE6PEL9pui+342ihXAVhH4IwsSrGdjbc9IpTsDr5d0TUS2S4OVSwOnmAbyDSzlqxgYKlD/ANkFEYUR0FyxngG0DiSIV3sZaQGjNrbXDOpvx1+DkIwtyGG/nNBn5dhH9Bt+T8bXAg1gXy66cZLY3otue69Zfu1HqqT8Bdt76wfiYd19qUuvFi9g8Ygyg1+jrBOQAAAABJRU5ErkJggg=="
+                        alt="Twitter">
+                </a>
+                <a class="social-link" href="https://mail.google.com/" target="_blank">
+                    <img src="data:image/png;base64,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"
+                        alt="Gmail">
+                </a>
+            </div>
+    </body>
+
+</html>
